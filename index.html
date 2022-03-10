@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="center container">
+      <div class="wrap row fancy-grid">
+        <div class="fancy-heading">
+          <h2
+            class="font-weight-normal animated_heading"
+            style="
+              background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/musico/demo/wp-content/uploads/2018/10/ruvim-noga-711147-unsplash.jpg);
+            "
+          >
+            Todo App
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <section class="todo-list-container col-md-6 col-offset-2">
+              <section class="add-todo flex text-input">
+                <input
+                  id="js-add-todo-input"
+                  class="mr1"
+                  type="text"
+                  value=""
+                  placeholder="Task"
+                />
+                <button id="js-add-todo-btn" class="btn-pink-moon">Add</button>
+              </section>
+          </div>
+        </div>
+          <header class="todo-header flex">
+            <div class="flex align-center mr1">
+              <input
+                class="mt0 js-filter-todo-radio-btn"
+                type="radio"
+                value="all"
+                id="all input1"
+                name="todo-filter"
+                checked="checked"
+              />
+              <label for="all">All</label>
+            </div>
+            <div class="flex align-center mr1">
+              <input
+                class="mt0 js-filter-todo-radio-btn"
+                type="radio"
+                value="active"
+                id="active"
+                name="todo-filter"
+              />
+              <label for="active">Active</label>
+            </div>
+            <div class="flex align-center mr1">
+              <input
+                class="mt0 js-filter-todo-radio-btn"
+                type="radio"
+                value="completed"
+                id="completed"
+                name="todo-filter"
+              />
+              <label for="completed">Completed</label>
+            </div>
+            <div class="flex align-center mla">
+              <button id="js-delete-all-btn" class="btn-pink-moon">
+                Delete All
+              </button>
+            </div>
+          </header>
+          <ul class="todo-list" id="js-todo-list"></ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js">
+ 
+    </script>
+  </body>
+</html>

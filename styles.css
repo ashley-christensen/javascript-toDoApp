@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  background-color: #f9b3dd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Montserrat;
+}
+
+/* INPUT FIELD ANIMATION */
+.text-input {
+  position: relative;
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 500px;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px 10px 10px 100px;
+  transition: all 0.1s ease-out;
+}
+
+input[type="text"] + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  padding: 0 20px;
+  background: #fa8072;
+  transform: translateZ(0) translateX(0);
+  transition: all 0.3s ease-in;
+  transition-delay: 0.2s;
+}
+
+input[type="text"]:focus + label {
+  transform: translateY(-120%) translateX(0%);
+  border-radius: 3px;
+  transition: all 0.1s ease-out;
+}
+
+input[type="text"]:focus {
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  transition-delay: 0.2s;
+}
+
+/* Container 1 */
+.wrap {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Typo */
+.font-weight-normal {
+  padding-left: 55px;
+  font-weight: normal;
+}
+
+/* Margins */
+.mr1 {
+  margin-right: 10px;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mla {
+  margin-left: auto;
+}
+
+.text-btn {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.text-btn:focus {
+  outline: 0;
+}
+
+.danger {
+  color: red;
+}
+
+/* Heading */
+.fancy-heading {
+  font-size: 160px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  letter-spacing: 5px;
+}
+
+.animated_heading {
+  margin: 0;
+  font-size: 80px;
+  color: #fff;
+  background-size: auto 200%;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+}
+
+/* Todo List */
+.add-todo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.todo-list {
+  padding-left: 0;
+}
+
+.todo-list-item {
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-list-item input:checked + label {
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  padding: 5px;
+}
+
+.btn-pink-moon {
+  background: #8e0054; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec008c,
+    #8e0054
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec008c,
+    #8e0054
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border: 3px solid #eee;
+  border-radius: 100px;
+}
